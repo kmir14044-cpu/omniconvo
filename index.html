@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>OmniConvo — AI Automation &amp; Social Media Growth | By Outsource Mantra</title>
+<meta content="AI sales automation, WhatsApp Business API, chatbots, CRM — plus AI-powered social media management. We run your conversations and your pages, 24/7." name="description"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- ============ ICON SPRITE (replaces emoji icons site-wide) ============ -->
+<svg aria-hidden="true" style="display:none">
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+<symbol id="i-cpu" viewbox="0 0 24 24"><rect height="10" rx="1.5" width="10" x="7" y="7"></rect><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l1.6 1.6M17.6 6L16 7.6M6 18l1.6-1.6M17.6 18L16 16.4"></path></symbol>
+<symbol id="i-target" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="4.5"></circle><circle cx="12" cy="12" fill="currentColor" r=".8"></circle></symbol>
+<symbol id="i-smartphone" viewbox="0 0 24 24"><rect height="19" rx="2.2" width="12" x="6" y="2.5"></rect><path d="M11 18.5h2"></path></symbol>
+<symbol id="i-edit" viewbox="0 0 24 24"><path d="M15.5 4.5l4 4L8 20H4v-4L15.5 4.5z"></path></symbol>
+<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="16" rx="2" width="17" x="3.5" y="5"></rect><path d="M8 2.5v5M16 2.5v5M3.5 10h17"></path></symbol>
+<symbol id="i-message" viewbox="0 0 24 24"><path d="M21 11.5a8 8 0 01-8.6 8L4 21l1.6-4.7A8 8 0 1121 11.5z"></path></symbol>
+<symbol id="i-bar-chart" viewbox="0 0 24 24"><path d="M5 20V11M12 20V4M19 20v-7"></path></symbol>
+<symbol id="i-alert" viewbox="0 0 24 24"><path d="M12 3.5L2 20.5h20L12 3.5z"></path><path d="M12 10v4.5M12 17.2v.1"></path></symbol>
+<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></symbol>
+<symbol id="i-bell-off" viewbox="0 0 24 24"><path d="M9.5 4.5a4 4 0 016.5 3.2c0 3.6 1 5.4 2 6.6H5.7M18 18H4.3c1.2-1.4 2.2-3.5 2.2-6.8"></path><path d="M13.7 21a2 2 0 01-3.4 0M3 3l18 18"></path></symbol>
+<symbol id="i-eye-off" viewbox="0 0 24 24"><path d="M3 3l18 18M10.6 5.2A10.6 10.6 0 0112 5c5.5 0 9.5 4 10.5 7-.5 1.4-1.4 3-2.8 4.3M6.6 6.6C4.4 8 2.9 10 1.5 12c1.6 3.7 5.7 7 10.5 7 1.4 0 2.7-.3 3.9-.7"></path><path d="M9.9 10a3 3 0 004.1 4"></path></symbol>
+<symbol id="i-credit-card" viewbox="0 0 24 24"><rect height="13" rx="2.2" width="19" x="2.5" y="5.5"></rect><path d="M2.5 10h19"></path></symbol>
+<symbol id="i-trend-down" viewbox="0 0 24 24"><path d="M3 6l7 7 4-4 7 7"></path><path d="M15 16h6v-6"></path></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"></circle><path d="M20.5 20.5l-5-5"></path></symbol>
+<symbol id="i-settings" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3.2"></circle><path d="M19.4 13.8a1.7 1.7 0 00.34 1.87l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.7 1.7 0 00-1.87-.34 1.7 1.7 0 00-1.04 1.56V20a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.56 1.7 1.7 0 00-1.87.34l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.7 1.7 0 00.34-1.87 1.7 1.7 0 00-1.56-1.04H2a2 2 0 110-4h.1a1.7 1.7 0 001.56-1.1 1.7 1.7 0 00-.34-1.87l-.06-.06a2 2 0 112.83-2.83l.06.06a1.7 1.7 0 001.87.34h.06A1.7 1.7 0 009.1 3.6V3.5a2 2 0 114 0v.1a1.7 1.7 0 001.04 1.56h.06a1.7 1.7 0 001.87-.34l.06-.06a2 2 0 112.83 2.83l-.06.06a1.7 1.7 0 00-.34 1.87v.06c.27.66.83 1.14 1.54 1.04H22a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1.04z"></path></symbol>
+<symbol id="i-rocket" viewbox="0 0 24 24"><path d="M12 2.5c3 1.3 5 4.4 5 8.4 0 2.4-.7 4.3-1.6 5.7L12 21l-3.4-4.4C7.7 15.2 7 13.3 7 10.9c0-4 2-7.1 5-8.4z"></path><circle cx="12" cy="10" r="2"></circle><path d="M8.5 15.5L5 17l1-4M15.5 15.5L19 17l-1-4"></path></symbol>
+<symbol id="i-whatsapp" viewbox="0 0 24 24"><path d="M20 12a8 8 0 10-14.5 4.6L4 21l4.6-1.4A8 8 0 0020 12z"></path><path d="M9 9.3c0 3.5 2.7 6.4 6.4 6.4.9 0 1.2-.5 1.2-1v-1c-1 0-2 .2-2.6-.4l-.6-.6c-.5-.5-1.2-1.6-1.7-2.1l-.6-.6c-.6-.6-.4-1.6-.4-2.6h-1c-.5 0-1 .3-1 1.2z"></path></symbol>
+<symbol id="i-instagram" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" fill="currentColor" r="1.1" stroke="none"></circle></symbol>
+<symbol id="i-facebook" viewbox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 008 7.5V10H5.5v3.5H8V21h3.5v-7.5h2.7l.5-3.5h-3.2V8c0-1 .3-1.7 1.7-1.7H15V3z"></path></symbol>
+<symbol id="i-tiktok" viewbox="0 0 24 24"><path d="M14 3v10.5a2.8 2.8 0 11-2.4-2.77M14 3c.4 2.3 2 4 4.5 4.2V10c-1.7 0-3.2-.5-4.5-1.4"></path></symbol>
+<symbol id="i-linkedin" viewbox="0 0 24 24"><rect height="18" rx="3" width="18" x="3" y="3"></rect><path d="M7.5 10v6.5M7.5 7.3v.1M11.5 16.5V13c0-1.4.9-2.5 2.3-2.5s2.2 1 2.2 2.5v3.5"></path></symbol>
+<symbol id="i-globe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.2 2.3 3.4 5.3 3.4 8.5s-1.2 6.2-3.4 8.5c-2.2-2.3-3.4-5.3-3.4-8.5S9.8 5.8 12 3.5z"></path></symbol>
+<symbol id="i-film" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><path d="M8 4v16M16 4v16M3 9h5M16 9h5M3 15h5M16 15h5"></path></symbol>
+<symbol id="i-image" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="8.5" cy="9.5" r="1.7"></circle><path d="M21 16l-5.5-5.5-8 8"></path></symbol>
+<symbol id="i-check-circle" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M8.3 12.3l2.5 2.5 5-5.3"></path></symbol>
+<symbol id="i-x-circle" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M9 9l6 6M15 9l-6 6"></path></symbol>
+<symbol id="i-clipboard" viewbox="0 0 24 24"><rect height="16.5" rx="2" width="13" x="5.5" y="4.5"></rect><rect height="3.5" rx="1" width="6" x="9" y="2.5"></rect><path d="M8.5 11h7M8.5 15h7"></path></symbol>
+<symbol id="i-mail" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3.5 6.5L12 13l8.5-6.5"></path></symbol>
+<symbol id="i-map-pin" viewbox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.3"></circle></symbol>
+<symbol id="i-phone" viewbox="0 0 24 24"><path d="M6 3.5h3.2l1.3 4.5-2.2 1.8a13 13 0 006.9 6.9l1.8-2.2 4.5 1.3V19a2 2 0 01-2.2 2C10.9 20.5 3.5 13.1 3 5.7A2 2 0 015 3.5z"></path></symbol>
+<symbol id="i-zap" viewbox="0 0 24 24"><path d="M12.5 2.5L4 14h6l-1.5 7.5L20 10h-6l-1.5-7.5z"></path></symbol>
+<symbol id="i-database" viewbox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"></ellipse><path d="M4 5.5V18c0 1.7 3.6 3 8 3s8-1.3 8-3V5.5"></path><path d="M4 11.75c0 1.66 3.58 3 8 3s8-1.34 8-3"></path></symbol>
+<symbol id="i-repeat" viewbox="0 0 24 24"><path d="M4 7.5h13l-2.5-2.5M20 16.5H7l2.5 2.5"></path></symbol>
+<symbol id="i-user-check" viewbox="0 0 24 24"><circle cx="9.5" cy="8" r="3.7"></circle><path d="M3.5 20c0-3.6 2.7-6 6-6s6 2.4 6 6M15.5 12.5l1.7 1.7L20.5 11"></path></symbol>
+</svg>
+<!-- ============ NAV ============ -->
+<nav>
+<div class="wrap nav-in">
+<a class="logo" href="#top">Omni<span>Convo</span><small>By Outsource Mantra</small></a>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#social">Social Media AI</a>
+<a href="#how">How It Works</a>
+<a href="#pricing">Pricing</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+<div class="nav-cta">
+<a class="btn btn-ghost" href="#contact">Get Quote</a>
+<a class="btn btn-blue" href="#contact">Free Audit →</a>
+</div>
+</div>
+</nav>
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <!-- <div class="badge">🏆 <b>Official WhatsApp Business API</b> · AI-First Growth Systems</div> -->
+         <br>
+        <h1>Your Conversations. Your Socials. <em>Fully Automated.</em></h1>
+        <p>We build AI systems that capture and close every lead on WhatsApp, Instagram &amp; Facebook — and run your
+          social media pages end-to-end. Content, replies, follow-ups, reports. 24/7, without you in the middle.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-blue"> Book Free Growth Audit</a>
+          <!-- <a href="#contact" class="btn btn-wa">💬 WhatsApp Us</a> -->
+        </div>
+        <!-- <div class="hero-note">Free audit · No commitment · Response within 30 minutes</div> -->
+      </div>
+      <div class="dash">
+        <div class="dash-head">
+          <span><b style="color:var(--txt)">OmniConvo</b> — Live Command Center</span>
+          <span class="live">LIVE</span>
+        </div>
+        <div class="dash-stats">
+          <div class="dstat"><b>312</b><span>Chats Today</span> <i>↑ 21%</i></div>
+          <div class="dstat"><b>68</b><span>Leads Captured</span> <i>↑ 14 new</i></div>
+          <div class="dstat"><b>&lt;2s</b><span>AI Response</span> <i>⚡ AI</i></div>
+        </div>
+        <div class="chat-row">
+          <div class="avat" style="background:rgba(34,197,94,.18);color:#4ade80">A</div>
+          <div class="meta"><b>Ahmed Raza</b><span>What's the price for a 5kW solar system?</span></div>
+          <span class="tag t-wa">WA</span>
+        </div>
+        <div class="chat-row">
+          <div class="avat" style="background:rgba(217,70,239,.18);color:#e879f9">S</div>
+          <div class="meta"><b>Sara Khan</b><span>Replied to your Reel — booking inquiry 🎉</span></div>
+          <span class="tag t-ig">IG</span>
+        </div>
+        <div class="chat-row">
+          <div class="avat" style="background:rgba(59,130,246,.18);color:#60a5fa">M</div>
+          <div class="meta"><b>M. Ali</b><span>Comment auto-DM sent · order tracking</span></div>
+          <span class="tag t-fb">FB</span>
+        </div>
+        <div class="chat-row">
+          <div class="avat" style="background:rgba(245,158,11,.16);color:#fbbf24">📅</div>
+          <div class="meta"><b>Content Engine</b><span>3 posts + 1 Reel scheduled for tomorrow ✓</span></div>
+          <span class="tag t-tt">AI</span>
+        </div>
+        <div class="dash-foot">
+          <span>🤖 AI active · 3 engines online</span>
+          <span>📊 Weekly report auto-sent</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+<div class="marquee-track">
+<span><em>●</em> WhatsApp Business API</span><span><em>●</em> AI Chatbots</span><span><em>●</em> Sales CRM</span><span><em>●</em> Social Media Management</span><span><em>●</em> AI Content Creation</span><span><em>●</em> Comment → DM Automation</span><span><em>●</em> Broadcast Campaigns</span><span><em>●</em> Monthly Growth Reports</span>
+<span><em>●</em> WhatsApp Business API</span><span><em>●</em> AI Chatbots</span><span><em>●</em> Sales CRM</span><span><em>●</em> Social Media Management</span><span><em>●</em> AI Content Creation</span><span><em>●</em> Comment → DM Automation</span><span><em>●</em> Broadcast Campaigns</span><span><em>●</em> Monthly Growth Reports</span>
+</div>
+</div>
+<!-- ============ PROBLEM ============ -->
+<section>
+    
+<div class="wrap">
+<span class="eyebrow">The Real Problem</span>
+<h2 class="reveal">Leads go cold. Pages go quiet.<br/>Growth stalls.</h2>
+<p class="sub">Most businesses lose sales in two places: slow replies to inquiries, and inconsistent social media presence. We fix both with one system.</p>
+<div class="prob-grid reveal-stagger">
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-alert"></use></svg></span><h3>Leads not followed up</h3><p>78% of leads go cold after just 1 hour without a response. Manual follow-up doesn't scale.</p></div>
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-clock"></use></svg></span><h3>Slow response times</h3><p>Customers expect a reply in under 5 minutes. Most businesses take 4+ hours.</p></div>
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-bell-off"></use></svg></span><h3>Pages posting randomly</h3><p>No content calendar, no consistency — the algorithm buries you and followers forget you exist.</p></div>
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-eye-off"></use></svg></span><h3>Zero CRM visibility</h3><p>No one knows which leads are hot, warm, or lost. Sales tracking lives in someone's head.</p></div>
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-credit-card"></use></svg></span><h3>Paying for a social team</h3><p>A designer + copywriter + manager costs Rs 150,000+/month — and still misses deadlines.</p></div>
+<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-trend-down"></use></svg></span><h3>No reporting</h3><p>You can't improve what you can't measure. No idea what content or channel actually converts.</p></div>
+</div>
+</div>
+</section>
+<!-- ============ COMPARISON ============ -->
+<section style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap center">
+<span class="eyebrow">The Difference</span>
+<h2 class="reveal">Doing It Yourself vs. Running On OmniConvo</h2>
+<p class="sub">Same leads, same platforms — a completely different outcome depending on what's running behind the scenes.</p>
+<div class="compare">
+<div class="comp-col bad reveal">
+<h3><svg class="icon"><use href="#i-x-circle"></use></svg> Manual &amp; Scattered</h3>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Replies whenever someone gets to their phone</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Leads tracked in someone's memory or a notebook</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Pages post when there's time — which is rarely</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Comments and DMs pile up, unanswered</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> No idea what's actually driving sales</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Hiring a full team costs Rs 150,000+/month</div>
+</div>
+<div class="comp-col good reveal">
+<h3><svg class="icon"><use href="#i-check-circle"></use></svg> Running On OmniConvo</h3>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> AI replies in under 2 seconds, 24/7</div>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> Every lead auto-logged and scored in your CRM</div>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> Content calendar planned and posted on schedule</div>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> AI + human team answer every comment and DM</div>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> Clear monthly reports on leads and growth</div>
+<div class="comp-row"><svg class="icon"><use href="#i-check-circle"></use></svg> Plans start at Rs 4,999/month</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SERVICES ============ -->
+<section id="services" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="hero-video">
+    
+</div>
+<div class="wrap center">
+<span class="eyebrow">What We Do</span>
+<h2 class="reveal">One Partner. Three Growth Engines.</h2>
+<p class="sub">Everything a modern business needs to capture, convert, and stay visible — built and managed by one team.</p>
+<div class="svc-grid reveal-stagger" style="text-align:left">
+<div class="svc r-item">
+<span class="pill">CORE</span>
+<span class="num">01</span>
+<div class="ico"><svg class="icon"><use href="#i-cpu"></use></svg></div>
+<h3>AI Sales Automation</h3>
+<p>End-to-end automation on the official WhatsApp Business API. AI captures, qualifies, and follows up on every lead — in under 2 seconds, around the clock.</p>
+<ul>
+<li>Official WhatsApp Business API — zero ban risk</li>
+<li>AI chatbots (ChatGPT, Gemini &amp; Claude built-in)</li>
+<li>No-code flow builder &amp; keyword triggers</li>
+<li>Voice note transcription — Urdu, English, Roman Urdu</li>
+<li>Broadcast campaigns to unlimited contacts</li>
+</ul>
+</div>
+<div class="svc r-item">
+<span class="pill">CORE</span>
+<span class="num">02</span>
+<div class="ico"><svg class="icon"><use href="#i-target"></use></svg></div>
+<h3>CRM &amp; Sales Pipeline</h3>
+<p>Every inquiry auto-logged, scored, and tracked from first message to closed deal. Your whole team in one command center.</p>
+<ul>
+<li>Drag &amp; drop pipeline — Hot / Warm / Cold / Closed</li>
+<li>Lead scoring &amp; automated follow-up sequences</li>
+<li>Multi-agent inbox with SLA tracking</li>
+<li>Google Sheets &amp; Calendar sync</li>
+<li>Shopify / WooCommerce order notifications</li>
+</ul>
+</div>
+<div class="svc r-item">
+<span class="pill new">NEW ✦</span>
+<span class="num">03</span>
+<div class="ico"><svg class="icon"><use href="#i-smartphone"></use></svg></div>
+<h3>AI Social Media Management</h3>
+<p>We run your Instagram, Facebook, TikTok &amp; LinkedIn pages for you — AI-powered content, scheduling, engagement, and growth. You approve, we execute.</p>
+<ul>
+<li>AI-generated posts, Reels scripts &amp; captions</li>
+<li>Monthly content calendar — done for you</li>
+<li>Comment &amp; DM management by AI + human team</li>
+<li>Branded designs matched to your identity</li>
+<li>Monthly growth &amp; performance reports</li>
+</ul>
+</div>
+</div>
+<div class="pipeline-wrap reveal">
+<div class="bg-canvas-wrap"><canvas id="pipeline-canvas"></canvas></div>
+<span class="eyebrow" style="position:relative">The Pipeline</span>
+<h3 style="font-size:22px;margin-bottom:8px;position:relative">What Happens The Second A Message Lands</h3>
+<p class="sub" style="margin:0 auto 10px;position:relative">One continuous flow, running automatically, every time.</p>
+<div class="pipeline-nodes">
+<div class="p-node active">
+<div class="p-ico"><svg class="icon"><use href="#i-message"></use></svg></div>
+<h4>Message In</h4>
+<span>WhatsApp, IG, FB or Web</span>
+</div>
+<div class="p-line"></div>
+<div class="p-node active">
+<div class="p-ico"><svg class="icon"><use href="#i-cpu"></use></svg></div>
+<h4>AI Understands</h4>
+<span>Intent &amp; language detected</span>
+</div>
+<div class="p-line"></div>
+<div class="p-node active">
+<div class="p-ico"><svg class="icon"><use href="#i-database"></use></svg></div>
+<h4>CRM Updated</h4>
+<span>Lead logged &amp; scored</span>
+</div>
+<div class="p-line"></div>
+<div class="p-node active">
+<div class="p-ico"><svg class="icon"><use href="#i-repeat"></use></svg></div>
+<h4>Auto Follow-Up</h4>
+<span>Sequence triggered</span>
+</div>
+<div class="p-line"></div>
+<div class="p-node active">
+<div class="p-ico"><svg class="icon"><use href="#i-user-check"></use></svg></div>
+<h4>Closed / Handed Off</h4>
+<span>Sale or agent handover</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ SOCIAL MEDIA DEEP DIVE ============ -->
+<section id="social">
+<div class="wrap split">
+<div>
+<span class="eyebrow">AI Social Media Management</span>
+<h2 class="reveal">Your Pages, Handled.<br/>Every Single Day.</h2>
+<p class="sub">Stop worrying about what to post. Our AI content engine plus a dedicated human team keeps your brand active, consistent, and growing — while every inquiry it generates flows straight into your automation system.</p>
+<div class="feat-list reveal-stagger">
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-edit"></use></svg></div><div><h4>AI Content Engine</h4><p>Posts, carousels, Reels scripts, and captions generated in your brand voice — in Urdu, English, or both. You approve everything before it goes live.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-calendar"></use></svg></div><div><h4>Done-For-You Content Calendar</h4><p>A full month of content planned, designed, and scheduled in advance. Festivals, campaigns, and product launches — all mapped out.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-message"></use></svg></div><div><h4>Engagement That Converts</h4><p>Every comment gets a reply, every DM gets answered — and buying-intent messages are auto-routed into your CRM as leads. Your page becomes a sales channel.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-bar-chart"></use></svg></div><div><h4>Monthly Growth Reports</h4><p>Followers, reach, engagement, leads generated, best-performing content — delivered in a clear report you can actually read.</p></div></div>
+</div>
+</div>
+<div class="cal reveal">
+<div class="cal-head">
+<b><svg class="icon"><use href="#i-calendar"></use></svg> Content Calendar — March</b>
+<span class="live">AUTO-PILOT</span>
+</div>
+<div class="cal-grid reveal-stagger">
+<div class="cal-d">M</div><div class="cal-d">T</div><div class="cal-d">W</div><div class="cal-d">T</div><div class="cal-d">F</div><div class="cal-d">S</div><div class="cal-d">S</div>
+<div class="cal-d post">1</div><div class="cal-d">2</div><div class="cal-d reel">3</div><div class="cal-d">4</div><div class="cal-d post">5</div><div class="cal-d">6</div><div class="cal-d">7</div>
+<div class="cal-d post">8</div><div class="cal-d">9</div><div class="cal-d reel">10</div><div class="cal-d">11</div><div class="cal-d post">12</div><div class="cal-d">13</div><div class="cal-d">14</div>
+<div class="cal-d post">15</div><div class="cal-d">16</div><div class="cal-d reel">17</div><div class="cal-d">18</div><div class="cal-d post">19</div><div class="cal-d">20</div><div class="cal-d">21</div>
+</div>
+<div class="reveal-stagger">
+<div class="cal-item r-item">
+<div class="th" style="background:rgba(217,70,239,.15)"><svg class="icon"><use href="#i-film"></use></svg></div>
+<div><b>Reel: "5 Signs You Need Solar"</b><span>Instagram + Facebook · Mon 9:00 AM</span></div>
+<span class="st st-sched">SCHEDULED</span>
+</div>
+<div class="cal-item r-item">
+<div class="th" style="background:rgba(59,130,246,.15)"><svg class="icon"><use href="#i-image"></use></svg></div>
+<div><b>Carousel: Client Success Story</b><span>Instagram + LinkedIn · Wed 6:00 PM</span></div>
+<span class="st st-live">PUBLISHED ✓</span>
+</div>
+<div class="cal-item r-item">
+<div class="th" style="background:rgba(245,158,11,.15)"><svg class="icon"><use href="#i-edit"></use></svg></div>
+<div><b>Post: Ramadan Offer Announcement</b><span>All platforms · Awaiting your approval</span></div>
+<span class="st st-draft">DRAFT</span>
+</div>
+<div class="cal-item r-item">
+<div class="th" style="background:rgba(34,197,94,.15)"><svg class="icon"><use href="#i-bar-chart"></use></svg></div>
+<div><b>February Growth Report</b><span>+2,340 followers · 46 leads from social</span></div>
+<span class="st st-live">SENT ✓</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap center">
+<span class="eyebrow">How It Works</span>
+<h2 class="reveal">Live in 3 Steps</h2>
+<p class="sub">No code. No complexity. We handle setup, content, and automation — you watch the leads come in.</p>
+<div class="steps reveal-stagger" style="text-align:left">
+<div class="step r-item"><span class="n">01</span><h3><svg class="icon"><use href="#i-search"></use></svg> Free Growth Audit</h3><p>We map your current inquiry-to-sale process and social presence, find exactly where leads and reach are being lost, and give you a custom blueprint — no commitment.</p></div>
+<div class="step r-item"><span class="n">02</span><h3><svg class="icon"><use href="#i-settings"></use></svg> We Build Your System</h3><p>Automation flows, AI chatbot, CRM setup, and your first month's content calendar — designed, built, and tested by our team. You approve everything.</p></div>
+<div class="step r-item"><span class="n">03</span><h3><svg class="icon"><use href="#i-rocket"></use></svg> Go Live &amp; Grow</h3><p>AI replies in under 2 seconds, your pages post consistently, every lead lands in your CRM — and you get a clear report every month.</p></div>
+</div>
+</div>
+</section>
+<!-- ============ PLATFORMS ============ -->
+<section>
+<div class="wrap center">
+<span class="eyebrow">Platforms</span>
+<h2 class="reveal">Where Your Customers Already Are</h2>
+<p class="sub">One system across every channel — conversations and content, unified.</p>
+<div class="plat-row">
+<div class="plat"><i><svg class="icon"><use href="#i-whatsapp"></use></svg></i> WhatsApp</div>
+<div class="plat"><i><svg class="icon"><use href="#i-instagram"></use></svg></i> Instagram</div>
+<div class="plat"><i><svg class="icon"><use href="#i-facebook"></use></svg></i> Facebook</div>
+<div class="plat"><i><svg class="icon"><use href="#i-tiktok"></use></svg></i> TikTok</div>
+<div class="plat"><i><svg class="icon"><use href="#i-linkedin"></use></svg></i> LinkedIn</div>
+<div class="plat"><i><svg class="icon"><use href="#i-globe"></use></svg></i> WebChat</div>
+</div>
+<div class="stats reveal-stagger">
+<div class="stat r-item"><b>&lt;2s</b><span>Average AI response to every message</span></div>
+<div class="stat r-item"><b data-count-to="95" data-suffix="%">0%</b><span>Of inquiries captured automatically</span></div>
+<div class="stat r-item"><b>24/7</b><span>System runs even when your team sleeps</span></div>
+<div class="stat r-item"><b data-count-to="30" data-suffix="+">0+</b><span>Posts &amp; Reels created for you monthly</span></div>
+</div>
+</div>
+</section>
+<!-- ============ PRICING ============ -->
+<section id="pricing" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap center">
+<span class="eyebrow">Pricing</span>
+<h2 class="reveal">Simple Plans. Serious Results.</h2>
+<p class="sub">Choose automation, social media management, or bundle both and save. WhatsApp Business API included on all automation plans.</p>
+<div class="price-tabs">
+<button class="ptab on" onclick="showPlans('auto',this)"><svg class="icon"><use href="#i-cpu"></use></svg> Automation</button>
+<button class="ptab" onclick="showPlans('social',this)"><svg class="icon"><use href="#i-smartphone"></use></svg> Social Media</button>
+<button class="ptab" onclick="showPlans('bundle',this)"><svg class="icon"><use href="#i-zap"></use></svg> Bundles</button>
+</div>
+<!-- AUTOMATION PLANS -->
+<div class="pgroup on" id="pg-auto">
+<div class="plans reveal-stagger" style="text-align:left">
+<div class="plan r-item">
+<h3>Starter</h3>
+<div class="amt">Rs 4,999<small> / month</small></div>
+<div class="for">For businesses starting their first automation on WhatsApp or Facebook.</div>
+<ul>
+<li>WhatsApp &amp; Facebook integration</li>
+<li>Keyword auto-replies</li>
+<li>No-code chatbot builder</li>
+<li>AI integration (ChatGPT / Gemini)</li>
+<li>Basic CRM &amp; lead tracking</li>
+<li>Email support</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Get Started</a>
+</div>
+<div class="plan hot r-item">
+<span class="flag"><svg class="icon"><use href="#i-shield"></use></svg> MOST POPULAR</span>
+<h3>Growth</h3>
+<div class="amt">Rs 8,999<small> / month</small></div>
+<div class="for">Best value for scaling businesses ready to automate everything.</div>
+<ul>
+<li>Everything in Starter</li>
+<li>Unlimited conversations</li>
+<li>Advanced automation flows</li>
+<li>Full CRM with pipeline tracking</li>
+<li>Voice note AI (Urdu / English)</li>
+<li>Shopify / WooCommerce notifications</li>
+<li>Google Sheets &amp; Calendar sync</li>
+<li>Priority support</li>
+</ul>
+<a class="btn btn-blue" href="#contact">Scale Now →</a>
+</div>
+<div class="plan r-item">
+<h3>Business Elite</h3>
+<div class="amt">Rs 12,999<small> / month</small></div>
+<div class="for">Full power, dedicated support, and custom integrations.</div>
+<ul>
+<li>Everything in Growth</li>
+<li>Dedicated account manager</li>
+<li>Custom API integrations</li>
+<li>Multi-agent team (5+ agents)</li>
+<li>Monthly flow optimization</li>
+<li>Monthly strategy calls</li>
+<li>WebChat widget included</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Talk to Sales</a>
+</div>
+</div>
+</div>
+<!-- SOCIAL PLANS -->
+<div class="pgroup" id="pg-social">
+<div class="plans reveal-stagger" style="text-align:left">
+<div class="plan r-item">
+<h3>Presence</h3>
+<div class="amt">Rs 24,999<small> / month</small></div>
+<div class="for">Stay consistent and visible — for small businesses building a brand.</div>
+<ul>
+<li>2 platforms (IG + FB)</li>
+<li>12 posts / month — AI + designer</li>
+<li>Captions in Urdu &amp; English</li>
+<li>Content calendar &amp; scheduling</li>
+<li>Comment &amp; DM replies (business hours)</li>
+<li>Monthly performance report</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Start Posting</a>
+</div>
+<div class="plan hot r-item">
+<span class="flag"><svg class="icon"><use href="#i-shield"></use></svg> MOST POPULAR</span>
+<h3>Growth Engine</h3>
+<div class="amt">Rs 44,999<small> / month</small></div>
+<div class="for">For brands serious about turning followers into customers.</div>
+<ul>
+<li>3 platforms (IG + FB + TikTok or LinkedIn)</li>
+<li>20 posts + 4 Reels / month</li>
+<li>AI content engine in your brand voice</li>
+<li>24/7 AI comment &amp; DM management</li>
+<li>Leads auto-routed to your CRM</li>
+<li>Hashtag &amp; trend strategy</li>
+<li>Monthly growth report + strategy call</li>
+</ul>
+<a class="btn btn-blue" href="#contact">Grow My Pages →</a>
+</div>
+<div class="plan r-item">
+<h3>Full Takeover</h3>
+<div class="amt">Rs 74,999<small> / month</small></div>
+<div class="for">We become your complete social media department.</div>
+<ul>
+<li>Up to 5 platforms</li>
+<li>30 posts + 8 Reels / month</li>
+<li>Dedicated content manager</li>
+<li>Ad campaign management (ad spend separate)</li>
+<li>Influencer &amp; UGC coordination</li>
+<li>Weekly reporting &amp; strategy</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Talk to Sales</a>
+</div>
+</div>
+</div>
+<!-- BUNDLE PLANS -->
+<div class="pgroup" id="pg-bundle">
+<div class="plans reveal-stagger" style="text-align:left">
+<div class="plan r-item">
+<h3>Convert</h3>
+<div class="amt">Rs 27,999<small> / month</small></div>
+<div class="for">Starter automation + Presence social. Save Rs 2,000/month.</div>
+<ul>
+<li>Full Starter automation plan</li>
+<li>Full Presence social plan</li>
+<li>Social leads flow into your CRM</li>
+<li>One team, one report, one invoice</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Get Bundle</a>
+</div>
+<div class="plan hot r-item">
+<span class="flag"><svg class="icon"><use href="#i-zap"></use></svg> BEST VALUE — SAVE Rs 6,000/mo</span>
+<h3>Dominate</h3>
+<div class="amt">Rs 47,999<small> / month</small></div>
+<div class="for">Growth automation + Growth Engine social. The complete system.</div>
+<ul>
+<li>Full Growth automation plan</li>
+<li>Full Growth Engine social plan</li>
+<li>Every comment, DM &amp; inquiry captured</li>
+<li>Unified monthly growth report</li>
+<li>Quarterly strategy review</li>
+</ul>
+<a class="btn btn-blue" href="#contact">Dominate My Market →</a>
+</div>
+<div class="plan r-item">
+<h3>Enterprise</h3>
+<div class="amt">Custom<small> pricing</small></div>
+<div class="for">Elite automation + Full Takeover social + custom builds.</div>
+<ul>
+<li>Everything, fully managed</li>
+<li>Dedicated account team</li>
+<li>Custom integrations &amp; dashboards</li>
+<li>Multi-brand / multi-location support</li>
+</ul>
+<a class="btn btn-ghost" href="#contact">Talk to Sales</a>
+</div>
+</div>
+</div>
+<div class="price-note">
+<div><svg class="icon"><use href="#i-settings"></use></svg> <b>One-time implementation</b> — automation flow design, testing, CRM setup &amp; AI prompt engineering. <b>Starts from Rs 34,999.</b> AI API usage (OpenAI / Gemini) billed separately by the provider.</div>
+<a class="btn btn-ghost" href="#contact" style="padding:10px 22px;font-size:13px">Get a quote →</a>
+</div>
+</div>
+</section>
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+<div class="wrap center">
+<span class="eyebrow">What Clients Say</span>
+<h2 class="reveal">Real Reviews. Real Results.</h2>
+<p class="sub">★★★★★ 5.0 average across Google &amp; Facebook reviews.</p>
+<div class="quotes reveal-stagger" style="text-align:left">
+<div class="quote r-item">
+<div class="stars">★★★★★</div>
+<p>"They thoroughly understood our complex business model. Their development and tech team proved highly skilled and professional — we are in safe hands and very satisfied with the services provided."</p>
+<div class="who"><div class="avat" style="background:rgba(59,130,246,.18);color:#60a5fa">E</div><div><b>Immigration Consultancy</b><span>Verified Google Review</span></div></div>
+</div>
+<div class="quote r-item">
+<div class="stars">★★★★★</div>
+<p>"The system works smoothly, replies instantly, and saves me hours managing customer messages. Highly recommended for anyone who wants to automate their WhatsApp and grow efficiently."</p>
+<div class="who"><div class="avat" style="background:rgba(34,197,94,.18);color:#4ade80">M</div><div><b>E-Commerce Owner</b><span>Facebook Review</span></div></div>
+</div>
+<div class="quote r-item">
+<div class="stars">★★★★★</div>
+<p>"Before, our pages posted randomly and leads went nowhere. Now content goes out on schedule, every DM gets answered, and inquiries land in our CRM automatically."</p>
+<div class="who"><div class="avat" style="background:rgba(217,70,239,.18);color:#e879f9">S</div><div><b>Retail Brand</b><span>Client Testimonial</span></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FAQ ============ -->
+<section id="faq" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap center">
+<span class="eyebrow">FAQ</span>
+<h2 class="reveal">Questions, Answered</h2>
+<div class="faq" style="text-align:left">
+<details open="">
+<summary>Is this just a chatbot?</summary>
+<p>No. A chatbot only replies to messages. OmniConvo is a complete growth system — it captures leads from WhatsApp, Instagram, Facebook and WebChat, qualifies them with AI, logs them into a CRM with pipeline tracking, runs automated follow-ups, AND manages your social media content and engagement. The whole inquiry-to-sale process runs without manual work.</p>
+</details>
+<details>
+<summary>How does AI social media management actually work?</summary>
+<p>Our AI content engine drafts posts, Reels scripts, and captions in your brand voice. Our human team refines designs and strategy. You approve everything through a simple approval flow before it goes live. AI + human team then handles comments and DMs — routing buying-intent messages straight into your CRM as leads.</p>
+</details>
+<details>
+<summary>Will automation get my WhatsApp number banned?</summary>
+<p>No — that's the point of using the official WhatsApp Business API. Unofficial bulk-messaging tools frequently get numbers banned. We set you up on the Meta-approved API, so your messaging stays compliant and stable.</p>
+</details>
+<details>
+<summary>Do I lose control of my pages?</summary>
+<p>Never. You retain full ownership and admin access to every page. We work as authorized managers, every post is approved by you before publishing, and you can pause or adjust anything at any time.</p>
+</details>
+<details>
+<summary>Do you work with businesses outside Pakistan?</summary>
+<p>Yes. We're based in Karachi and serve clients across Pakistan and internationally. The system works the same way globally, and our team supports clients in both English and Urdu.</p>
+</details>
+<details>
+<summary>How long does it take to go live?</summary>
+<p>Basic automation can go live within hours. A full setup with custom flows and your first content calendar typically takes 5–10 days, depending on complexity.</p>
+</details>
+<details>
+<summary>What does it cost?</summary>
+<p>Automation plans start at Rs 4,999/month, social media management at Rs 24,999/month, and bundles save you up to Rs 6,000/month. A one-time implementation service starts from Rs 34,999. AI API usage is billed separately by the provider.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- ============ CTA / CONTACT ============ -->
+<section id="contact">
+<div class="wrap">
+<div class="cta-box reveal">
+<span class="eyebrow">Get In Touch</span>
+<h2 class="reveal">Stop Losing Leads.<br/>Start Growing Everywhere.</h2>
+<p class="sub" style="margin-bottom:34px">Book a free 15-minute growth audit. We'll map your current process, find where leads and reach are being lost, and show you exactly how to fix it — no commitment, no pitch.</p>
+<div class="cta-btns">
+<a class="btn btn-blue" href="https://wa.me/920000000000?text=Hi+Team%2C+I+want+a+Free+Growth+Audit"><svg class="icon"><use href="#i-whatsapp"></use></svg>Book Free Audit</a>
+<a class="btn btn-ghost" href="mailto:hello@omniconvo.com"><svg class="icon"><use href="#i-mail"></use></svg> hello@omniconvo.com</a>
+</div>
+<p style="position:relative;margin-top:22px;font-size:13px;color:var(--txt-3)"><svg class="icon"><use href="#i-map-pin"></use></svg> Karachi, Pakistan · Serving businesses worldwide · Typically replies within 30 minutes</p>
+</div>
+</div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand">
+<a class="logo" href="#top">Omni<span>Convo</span><small>By Outsource Mantra</small></a>
+<p>AI sales automation and social media growth for WhatsApp, Instagram, Facebook, TikTok &amp; LinkedIn. 24/7 systems, zero hassle, real results.</p>
+<p class="contact-line"><svg class="icon"><use href="#i-map-pin"></use></svg> Karachi, Pakistan</p><p class="contact-line"><svg class="icon"><use href="#i-mail"></use></svg> hello@omniconvo.com</p><p class="contact-line"><svg class="icon"><use href="#i-phone"></use></svg> +92 300 0000000</p>
+</div>
+<div>
+<h4>Platform</h4>
+<a href="#services">AI Automation</a>
+<a href="#services">CRM &amp; Pipeline</a>
+<a href="#social">Social Media AI</a>
+<a href="#pricing">Pricing</a>
+</div>
+<div>
+<h4>Solutions</h4>
+<a href="#services">Travel Agencies</a>
+<a href="#services">Real Estate</a>
+<a href="#services">E-Commerce</a>
+<a href="#services">Education &amp; Consultants</a>
+</div>
+<div>
+<h4>Company</h4>
+<a href="https://outsourcemantra.com">Outsource Mantra</a>
+<a href="#contact">Free Audit</a>
+<a href="#contact">Get a Quote</a>
+<a href="#faq">FAQ</a>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 OmniConvo · An Outsource Mantra Company · Karachi, Pakistan</span>
+<span>Automating Business. Designing the Future.</span>
+</div>
+</div>
+</footer>
+<a aria-label="WhatsApp" class="fab" href="https://wa.me/920000000000"><svg class="icon"><use href="#i-whatsapp"></use></svg></a>
+
+<script src="script.js"></script></body>
+</html>
