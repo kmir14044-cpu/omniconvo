@@ -5956,3 +5956,128 @@ footer {
 body {
   zoom: 1.1;
 }
+/* Move hero content slightly upward */
+@media (min-width: 1101px) {
+  .hero-grid {
+    transform: translateY(12px) !important;
+  }
+}
+
+/* Move hero content a little more upward and remove start loader */
+@media (min-width: 1101px) {
+  .hero-grid {
+    transform: translateY(-10px) !important;
+  }
+}
+
+body.is-loading {
+  overflow: auto !important;
+}
+
+.motion-loader,
+.loader-core,
+.loader-ring,
+.loader-bolt,
+.loader-label {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+/* Remove glitter/divider lines at section edges */
+.scroll-progress,
+.scroll-progress span {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+section::before,
+section::after,
+.section-soft::before,
+.section-soft::after,
+.problem-section::before,
+.problem-section::after,
+.hero::before,
+.hero::after,
+#how::before,
+#how::after,
+.marquee::before,
+.marquee::after,
+footer::before,
+footer::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+section,
+.section-soft,
+.problem-section,
+#how.section-soft,
+.marquee,
+footer {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Final cleanup: remove remaining decorative horizontal/connector lines */
+.section-kicker-line,
+.p-line,
+.pipeline-nodes > .p-line,
+.scroll-progress,
+.scroll-progress span,
+.signal-rail,
+.signal-dot {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.section-kicker-line::before,
+.section-kicker-line::after,
+.p-line::before,
+.p-line::after,
+.pipeline-nodes > .p-line::before,
+.pipeline-nodes > .p-line::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.hero,
+.problem-section,
+.section-soft,
+section,
+.marquee,
+.pipeline-wrap,
+.contact,
+footer {
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.hero > .wrap,
+.problem-section > .wrap,
+.section-soft > .wrap,
+section > .wrap,
+footer > .wrap {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
