@@ -1,4 +1,4 @@
-
+﻿
 function showPlans(id, btn){
   document.querySelectorAll('.pgroup').forEach(g=>g.classList.remove('on'));
   document.getElementById('pg-'+id).classList.add('on');
@@ -35,6 +35,87 @@ function showPlans(id, btn){
       activate(idx);
     }, 2200);
   }
+})();
+
+/* ---------- Workflow timeline: draw connecting line through dot centers ---------- */
+/* ---------- Workflow timeline: draw connecting line through dot centers ---------- */
+(() => {
+    const wf = document.querySelector(".workflow");
+    if (!wf) return;
+
+    let line = wf.querySelector(".wf-line");
+
+    if (!line) {
+        line = document.createElement("div");
+        line.className = "wf-line";
+        wf.appendChild(line);
+    }
+
+    function layout() {
+        const nodes = [...wf.querySelectorAll(".wf-node")];
+
+        if (nodes.length < 2) return;
+
+        const first = nodes[0];
+        const last = nodes[nodes.length - 1];
+
+        // Position relative to workflow container
+        const wfRect = wf.getBoundingClientRect();
+        const firstRect = first.getBoundingClientRect();
+        const lastRect = last.getBoundingClientRect();
+
+        const x = firstRect.left - wfRect.left + firstRect.width / 2;
+        const top = firstRect.top - wfRect.top + firstRect.height / 2;
+        const bottom = lastRect.top - wfRect.top + lastRect.height / 2;
+
+        line.style.left = `${x}px`;
+        line.style.top = `${top}px`;
+        line.style.height = `${Math.max(0, bottom - top)}px`;
+    }
+
+    let raf = null;
+
+    function refresh() {
+        if (raf) cancelAnimationFrame(raf);
+
+        raf = requestAnimationFrame(() => {
+            requestAnimationFrame(layout);
+        });
+    }
+
+    // Initial draw
+    refresh();
+
+    // Window events
+    window.addEventListener("load", refresh);
+    window.addEventListener("resize", refresh);
+    window.addEventListener("orientationchange", refresh);
+
+    // After fonts load
+    if (document.fonts) {
+        document.fonts.ready.then(refresh);
+    }
+
+    // Observe workflow size changes
+    if (window.ResizeObserver) {
+        const resizeObserver = new ResizeObserver(refresh);
+        resizeObserver.observe(wf);
+
+        document.querySelectorAll(".wf-node").forEach(node => {
+            resizeObserver.observe(node);
+        });
+    }
+
+    // If cards animate into place
+    setTimeout(refresh, 100);
+    setTimeout(refresh, 300);
+    setTimeout(refresh, 600);
+    setTimeout(refresh, 1000);
+
+    // Redraw whenever page becomes visible again
+    document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) refresh();
+    });
 })();
 
 /* ---------- Scroll reveal (fade/slide up on entering viewport) ---------- */
@@ -250,10 +331,10 @@ function showPlans(id, btn){
   const rows = Array.from(feed.querySelectorAll('.chat-row'));
   const pool = [
     {a:'H', bg:'rgba(59,130,246,.18)', fg:'#60a5fa', name:'Hina Malik', msg:'Do you have this in size medium?', tag:'WA', tagClass:'t-wa'},
-    {a:'U', bg:'rgba(34,197,94,.18)', fg:'#4ade80', name:'Usman Tariq', msg:'Order #4482 — asking for delivery ETA', tag:'WA', tagClass:'t-wa'},
+    {a:'U', bg:'rgba(34,197,94,.18)', fg:'#4ade80', name:'Usman Tariq', msg:'Order #4482 â€” asking for delivery ETA', tag:'WA', tagClass:'t-wa'},
     {a:'F', bg:'rgba(217,70,239,.18)', fg:'#e879f9', name:'Fatima N.', msg:'DM: loved the new Reel, is it available?', tag:'IG', tagClass:'t-ig'},
-    {a:'K', bg:'rgba(59,130,246,.18)', fg:'#60a5fa', name:'Kamran S.', msg:'Comment auto-DM sent · pricing info', tag:'FB', tagClass:'t-fb'},
-    {a:'✓', bg:'rgba(34,197,94,.16)', fg:'#4ade80', name:'CRM Engine', msg:'Lead scored HOT → assigned to sales', tag:'AI', tagClass:'t-tt'},
+    {a:'K', bg:'rgba(59,130,246,.18)', fg:'#60a5fa', name:'Kamran S.', msg:'Comment auto-DM sent Â· pricing info', tag:'FB', tagClass:'t-fb'},
+    {a:'âœ“', bg:'rgba(34,197,94,.16)', fg:'#4ade80', name:'CRM Engine', msg:'Lead scored HOT â†’ assigned to sales', tag:'AI', tagClass:'t-tt'},
     {a:'R', bg:'rgba(245,158,11,.16)', fg:'#fbbf24', name:'Reel Scheduler', msg:'Next Reel queued for 6:00 PM today', tag:'AI', tagClass:'t-tt'},
   ];
   let poolIdx = 0;
@@ -284,5 +365,24 @@ function showPlans(id, btn){
     }, 3200);
   }
   function reduceMotionCheck(){ return matchMedia('(prefers-reduced-motion: reduce)').matches; }
+})();
+
+
+/* Cinematic interaction layer */
+(()=>{
+ const loader=document.querySelector('.motion-loader');
+ const done=()=>{document.body.classList.remove('is-loading');loader?.classList.add('is-hidden')};
+ window.addEventListener('load',()=>setTimeout(done,650)); setTimeout(done,2600);
+ const bar=document.querySelector('.scroll-progress span'),nav=document.querySelector('nav'); let lastY=0,ticking=false;
+ const update=()=>{const y=scrollY,max=document.documentElement.scrollHeight-innerHeight;bar.style.transform=`scaleX(${max?y/max:0})`;nav.classList.toggle('nav-scrolled',y>30);nav.classList.toggle('nav-hidden',y>lastY&&y>500);lastY=y;ticking=false};
+ addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true}},{passive:true});update();
+ const toggle=document.querySelector('.menu-toggle'),links=document.querySelector('.nav-links');
+ toggle?.addEventListener('click',()=>{toggle.classList.toggle('is-open');links.classList.toggle('is-open')}); links?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{toggle?.classList.remove('is-open');links.classList.remove('is-open')}));
+ const hero=document.querySelector('.hero'),dash=document.querySelector('.vx-dash');
+ if(hero&&dash&&matchMedia('(hover:hover) and (prefers-reduced-motion:no-preference)').matches){hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;dash.style.animation='none';dash.style.transform=`translate3d(${x*14}px,${y*10}px,0) rotateX(${-y*3}deg) rotateY(${x*4}deg)`});hero.addEventListener('pointerleave',()=>{dash.style.transform='';dash.style.animation=''})}
+ document.querySelectorAll('section').forEach(s=>{const l=document.createElement('i');l.className='section-kicker-line';s.prepend(l)});
+ const sio=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('in-view',e.isIntersecting)),{threshold:.12});document.querySelectorAll('section').forEach(s=>sio.observe(s));
+ document.querySelectorAll('h2').forEach(h=>{const accentWords=new Set([...h.querySelectorAll('.text-accent')].flatMap(el=>el.textContent.trim().split(/\s+/)));const words=h.textContent.trim().split(/\s+/);h.innerHTML=words.map((w,i)=>{const clean=w.replace(/[^A-Za-z0-9&.-]/g,'');const accent=accentWords.has(w)||accentWords.has(clean);return `<span class="motion-word${accent?' text-accent':''}" style="transition-delay:${i*45}ms">${w}</span>`}).join(' ')});
+ const wio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.motion-word').forEach(w=>{w.style.opacity='1';w.style.transform='translateY(0)'});wio.unobserve(e.target)}}),{threshold:.5});document.querySelectorAll('h2').forEach(h=>{h.querySelectorAll('.motion-word').forEach(w=>{w.style.opacity='0';w.style.transform='translateY(28px)';w.style.transition='opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)'});wio.observe(h)});
 })();
 

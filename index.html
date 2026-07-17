@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>OmniConvo — AI Automation &amp; Social Media Growth | By Outsource Mantra</title>
-<meta content="AI sales automation, WhatsApp Business API, chatbots, CRM — plus AI-powered social media management. We run your conversations and your pages, 24/7." name="description"/>
+<title>OmniConvo &mdash; AI Automation &amp; Social Media Growth | By Outsource Mantra</title>
+<meta content="AI sales automation, WhatsApp Business API, chatbots, CRM &mdash; plus AI-powered social media management. We run your conversations and your pages, 24/7." name="description"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet"/></head>
-<body>
+<body class="is-loading"><div class="motion-loader" aria-label="Loading"><div class="loader-core"><div class="loader-ring"></div><div class="loader-bolt"></div><div class="loader-label">Initializing OmniConvo</div></div></div><div class="scroll-progress"><span></span></div>
 <!-- ============ ICON SPRITE (replaces emoji icons site-wide) ============ -->
 <svg aria-hidden="true" style="display:none">
 <symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></symbol>
@@ -61,60 +61,82 @@
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
 </div>
-<div class="nav-cta">
-<a class="btn btn-ghost" href="#contact">Get Quote</a>
-<a class="btn btn-blue" href="#contact">Free Audit →</a>
+<button class="menu-toggle" aria-label="Open menu"><i></i><i></i></button><div class="nav-cta">
+<!-- <a class="btn btn-ghost" href="#contact">Get Quote</a> -->
+<a class="btn btn-blue" href="#contact">Free Audit</a>
 </div>
 </div>
 </nav>
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
+    <canvas id="hero-canvas"></canvas>
+    <div id="spotlight" class=""></div>
     <div class="wrap hero-grid">
       <div>
-        <!-- <div class="badge">🏆 <b>Official WhatsApp Business API</b> · AI-First Growth Systems</div> -->
          <br>
-        <h1>Your Conversations. Your Socials. <em>Fully Automated.</em></h1>
-        <p>We build AI systems that capture and close every lead on WhatsApp, Instagram &amp; Facebook — and run your
-          social media pages end-to-end. Content, replies, follow-ups, reports. 24/7, without you in the middle.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-blue"> Book Free Growth Audit</a>
-          <!-- <a href="#contact" class="btn btn-wa">💬 WhatsApp Us</a> -->
+        <h1 class="hero-heading reveal">
+          <span class="hero-line" style="--line-index: 0">Close Leads.</span>
+          <span class="hero-line" style="--line-index: 1"><em>Grow Socials.</em></span>
+        </h1>
+        <p class="hero-subtitle reveal">We build AI systems that reply instantly, capture every lead, and run your social pages end-to-end across WhatsApp, Instagram and Facebook.</p>
+        <div class="hero-ctas reveal">
+          <a href="#contact" class="btn btn-blue" >Book Free Growth Audit</a>
         </div>
-        <!-- <div class="hero-note">Free audit · No commitment · Response within 30 minutes</div> -->
       </div>
-      <div class="dash">
-        <div class="dash-head">
-          <span><b style="color:var(--txt)">OmniConvo</b> — Live Command Center</span>
-          <span class="live">LIVE</span>
+      <div class="vx-dash reveal">
+        <div class="vx-dash-sidebar">
+          <div class="vx-dash-brand"><span class="vx-dash-logo">O</span> OmniConvo</div>
+          <div class="vx-dash-nav">
+            <a class="active"><svg class="icon"><use href="#i-bar-chart"></use></svg>Overview</a>
+            <a><svg class="icon"><use href="#i-message"></use></svg>Conversations</a>
+            <a><svg class="icon"><use href="#i-target"></use></svg>Leads</a>
+            <a><svg class="icon"><use href="#i-film"></use></svg>Content</a>
+            <a><svg class="icon"><use href="#i-user-check"></use></svg>Team</a>
+            <a><svg class="icon"><use href="#i-settings"></use></svg>Settings</a>
+          </div>
         </div>
-        <div class="dash-stats">
-          <div class="dstat"><b>312</b><span>Chats Today</span> <i>↑ 21%</i></div>
-          <div class="dstat"><b>68</b><span>Leads Captured</span> <i>↑ 14 new</i></div>
-          <div class="dstat"><b>&lt;2s</b><span>AI Response</span> <i>⚡ AI</i></div>
+        <div class="vx-dash-main">
+          <div class="vx-dash-topbar">
+            <h4>Growth Overview</h4>
+            <div class="vx-dash-topbar-right">
+              <span class="vx-dash-range">Last 30 days</span>
+              <span class="vx-dash-avatar">OM</span>
+            </div>
+          </div>
+          <div class="vx-dash-stats">
+            <div class="vx-dash-stat"><span class="lbl">Chats Today</span><b>312</b><span class="delta up">21% from last mo</span></div>
+            <div class="vx-dash-stat"><span class="lbl">Leads Captured</span><b>68</b><span class="delta up">14 new</span></div>
+            <div class="vx-dash-stat"><span class="lbl">AI Response</span><b>&lt;2s</b><span class="delta up">Always on</span></div>
+            <div class="vx-dash-stat"><span class="lbl">Active Engines</span><b>3</b><span class="delta up">100% uptime</span></div>
+          </div>
+          <div class="vx-dash-panels">
+            <div class="vx-dash-chart">
+              <span class="vx-dash-panel-title">Conversation Activity</span>
+              <svg viewBox="0 0 260 90" class="vx-chart-svg" preserveAspectRatio="none">
+                <polyline class="vx-chart-line" points="0,70 30,58 60,62 90,38 120,46 150,22 180,32 210,14 240,26 260,10"></polyline>
+              </svg>
+            </div>
+            <div class="vx-dash-deployments">
+              <span class="vx-dash-panel-title">Recent Activity</span>
+              <div class="vx-dep-row"><span class="vx-dep-name">Ahmed Raza</span><span class="vx-dep-tag">WA</span><span class="vx-dep-time">2m</span></div>
+              <div class="vx-dep-row"><span class="vx-dep-name">Sara Khan</span><span class="vx-dep-tag">IG</span><span class="vx-dep-time">14m</span></div>
+              <div class="vx-dep-row"><span class="vx-dep-name">M. Ali</span><span class="vx-dep-tag">FB</span><span class="vx-dep-time">41m</span></div>
+            </div>
+          </div>
         </div>
-        <div class="chat-row">
-          <div class="avat" style="background:rgba(34,197,94,.18);color:#4ade80">A</div>
-          <div class="meta"><b>Ahmed Raza</b><span>What's the price for a 5kW solar system?</span></div>
-          <span class="tag t-wa">WA</span>
-        </div>
-        <div class="chat-row">
-          <div class="avat" style="background:rgba(217,70,239,.18);color:#e879f9">S</div>
-          <div class="meta"><b>Sara Khan</b><span>Replied to your Reel — booking inquiry 🎉</span></div>
-          <span class="tag t-ig">IG</span>
-        </div>
-        <div class="chat-row">
-          <div class="avat" style="background:rgba(59,130,246,.18);color:#60a5fa">M</div>
-          <div class="meta"><b>M. Ali</b><span>Comment auto-DM sent · order tracking</span></div>
-          <span class="tag t-fb">FB</span>
-        </div>
-        <div class="chat-row">
-          <div class="avat" style="background:rgba(245,158,11,.16);color:#fbbf24">📅</div>
-          <div class="meta"><b>Content Engine</b><span>3 posts + 1 Reel scheduled for tomorrow ✓</span></div>
-          <span class="tag t-tt">AI</span>
-        </div>
-        <div class="dash-foot">
-          <span>🤖 AI active · 3 engines online</span>
-          <span>📊 Weekly report auto-sent</span>
+        <div class="vx-code-window">
+          <div class="vx-code-head">
+            <span class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></span>
+            <span class="vx-code-filename">whatsapp.service.ts</span>
+          </div>
+          <pre class="vx-code-body"><code><span class="tok-kw">import</span> { <span class="tok-cls">Injectable</span> } <span class="tok-kw">from</span> <span class="tok-str">'@nestjs/common'</span>;
+<span class="tok-kw">import</span> { <span class="tok-cls">CrmService</span> } <span class="tok-kw">from</span> <span class="tok-str">'@/core/crm.service'</span>;
+
+<span class="tok-dec">@Injectable()</span>
+<span class="tok-kw">export class</span> <span class="tok-cls">WhatsappService</span> {
+  <span class="tok-fn">constructor</span>(<span class="tok-kw">private</span> crm: <span class="tok-cls">CrmService</span>) {}
+
+  <span class="tok-kw">async</span> <span class="tok-fn">handleMessage</span>() {</code></pre>
         </div>
       </div>
     </div>
@@ -123,39 +145,40 @@
 <!-- ============ MARQUEE ============ -->
 <div class="marquee">
 <div class="marquee-track">
-<span><em>●</em> WhatsApp Business API</span><span><em>●</em> AI Chatbots</span><span><em>●</em> Sales CRM</span><span><em>●</em> Social Media Management</span><span><em>●</em> AI Content Creation</span><span><em>●</em> Comment → DM Automation</span><span><em>●</em> Broadcast Campaigns</span><span><em>●</em> Monthly Growth Reports</span>
-<span><em>●</em> WhatsApp Business API</span><span><em>●</em> AI Chatbots</span><span><em>●</em> Sales CRM</span><span><em>●</em> Social Media Management</span><span><em>●</em> AI Content Creation</span><span><em>●</em> Comment → DM Automation</span><span><em>●</em> Broadcast Campaigns</span><span><em>●</em> Monthly Growth Reports</span>
+<span><em>&bull;</em> WhatsApp Business API</span><span><em>&bull;</em> AI Chatbots</span><span><em>&bull;</em> Sales CRM</span><span><em>&bull;</em> Social Media Management</span><span><em>&bull;</em> AI Content Creation</span><span><em>&bull;</em> Comment &rarr; DM Automation</span><span><em>&bull;</em> Broadcast Campaigns</span><span><em>&bull;</em> Monthly Growth Reports</span>
+<span><em>&bull;</em> WhatsApp Business API</span><span><em>&bull;</em> AI Chatbots</span><span><em>&bull;</em> Sales CRM</span><span><em>&bull;</em> Social Media Management</span><span><em>&bull;</em> AI Content Creation</span><span><em>&bull;</em> Comment &rarr; DM Automation</span><span><em>&bull;</em> Broadcast Campaigns</span><span><em>&bull;</em> Monthly Growth Reports</span>
 </div>
 </div>
 <!-- ============ PROBLEM ============ -->
-<section>
-    
+<section class="problem-section">
 <div class="wrap">
+<div class="section-head problem-head">
 <span class="eyebrow">The Real Problem</span>
-<h2 class="reveal">Leads go cold. Pages go quiet.<br/>Growth stalls.</h2>
-<p class="sub">Most businesses lose sales in two places: slow replies to inquiries, and inconsistent social media presence. We fix both with one system.</p>
+<h2 class="reveal">Leads go cold. Pages go quiet. Growth stalls.</h2>
+<p class="sub">Most businesses lose sales in two places: slow replies to inquiries, and inconsistent social media presence. OmniConvo fixes both with one operating system.</p>
+</div>
 <div class="prob-grid reveal-stagger">
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-alert"></use></svg></span><h3>Leads not followed up</h3><p>78% of leads go cold after just 1 hour without a response. Manual follow-up doesn't scale.</p></div>
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-clock"></use></svg></span><h3>Slow response times</h3><p>Customers expect a reply in under 5 minutes. Most businesses take 4+ hours.</p></div>
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-bell-off"></use></svg></span><h3>Pages posting randomly</h3><p>No content calendar, no consistency — the algorithm buries you and followers forget you exist.</p></div>
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-eye-off"></use></svg></span><h3>Zero CRM visibility</h3><p>No one knows which leads are hot, warm, or lost. Sales tracking lives in someone's head.</p></div>
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-credit-card"></use></svg></span><h3>Paying for a social team</h3><p>A designer + copywriter + manager costs Rs 150,000+/month — and still misses deadlines.</p></div>
-<div class="prob r-item"><span class="ico"><svg class="icon"><use href="#i-trend-down"></use></svg></span><h3>No reporting</h3><p>You can't improve what you can't measure. No idea what content or channel actually converts.</p></div>
+<div class="prob r-item"><div class="prob-visual lead-flow"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><rect class="phone" x="32" y="18" width="54" height="82" rx="13"/><path d="M45 34h28M45 46h20"/><rect class="msg missed" x="52" y="56" width="70" height="28" rx="10"/><path d="M68 70h36"/><circle class="danger" cx="128" cy="38" r="18"/><path class="danger-stroke" d="M128 28v13M128 48v1"/><text class="mini-label" x="96" y="107">missed lead</text></svg></div><h3>Leads not followed up</h3><p>78% of leads go cold after just 1 hour without a response. Manual follow-up doesn't scale.</p></div>
+<div class="prob r-item"><div class="prob-visual response-time"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><rect x="22" y="36" width="82" height="42" rx="12"/><path d="M39 52h35M39 64h50"/><circle class="clock-face" cx="126" cy="42" r="27"/><path class="accent" d="M126 23v20l14 8"/><text class="big-metric" x="102" y="92">4h</text><text class="mini-label" x="72" y="108">reply delay</text></svg></div><h3>Slow response times</h3><p>Customers expect a reply in under 5 minutes. Most businesses take 4+ hours.</p></div>
+<div class="prob r-item"><div class="prob-visual post-calendar"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><rect x="34" y="20" width="112" height="76" rx="12"/><path d="M34 42h112M58 20v16M122 20v16"/><rect class="empty-slot" x="50" y="54" width="20" height="15" rx="4"/><rect class="empty-slot" x="82" y="54" width="20" height="15" rx="4"/><rect class="bad-slot" x="114" y="70" width="20" height="15" rx="4"/><path class="danger-stroke" d="M118 54l16 16M134 54l-16 16"/><text class="mini-label" x="60" y="110">no calendar</text></svg></div><h3>Pages posting randomly</h3><p>No content calendar, no consistency - the algorithm buries you and followers forget you exist.</p></div>
+<div class="prob r-item"><div class="prob-visual crm-pipeline"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><rect x="24" y="24" width="142" height="72" rx="12"/><path d="M72 24v72M118 24v72"/><text class="tiny-head" x="38" y="42">HOT</text><text class="tiny-head" x="82" y="42">WARM</text><text class="tiny-head" x="128" y="42">LOST</text><rect class="card-chip" x="34" y="54" width="28" height="13" rx="4"/><rect class="card-chip muted" x="82" y="70" width="28" height="13" rx="4"/><path class="danger-stroke" d="M132 58l18 18M150 58l-18 18"/><text class="mini-label" x="58" y="112">unclear CRM</text></svg></div><h3>Zero CRM visibility</h3><p>No one knows which leads are hot, warm, or lost. Sales tracking lives in someone's head.</p></div>
+<div class="prob r-item"><div class="prob-visual team-cost"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><circle cx="56" cy="34" r="14"/><circle cx="92" cy="30" r="16"/><circle cx="128" cy="34" r="14"/><path d="M34 76c7-22 37-22 44 0M62 82c9-30 51-30 60 0M106 76c7-22 37-22 44 0"/><rect class="cost-pill" x="46" y="82" width="98" height="26" rx="9"/><text class="cost-text" x="60" y="100">Rs 150k+</text></svg></div><h3>Paying for a social team</h3><p>A designer + copywriter + manager costs Rs 150,000+/month - and still misses deadlines.</p></div>
+<div class="prob r-item"><div class="prob-visual report-chart"><svg class="prob-svg mini-ui-svg" viewBox="0 0 190 120" aria-hidden="true"><rect x="30" y="22" width="128" height="78" rx="12"/><path d="M48 82h88M48 66h88M48 50h88"/><path class="accent" d="M52 80l24-26 23 13 34-39"/><circle class="point" cx="52" cy="80" r="5"/><circle class="point" cx="76" cy="54" r="5"/><circle class="point" cx="99" cy="67" r="5"/><circle class="point" cx="133" cy="28" r="5"/><text class="big-metric" x="64" y="44">ROI?</text><text class="mini-label" x="63" y="112">no reports</text></svg></div><h3>No reporting</h3><p>You can't improve what you can't measure. No idea what content or channel actually converts.</p></div>
 </div>
 </div>
 </section>
 <!-- ============ COMPARISON ============ -->
-<section style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section class="section-soft">
 <div class="wrap center">
 <span class="eyebrow">The Difference</span>
 <h2 class="reveal">Doing It Yourself vs. Running On OmniConvo</h2>
-<p class="sub">Same leads, same platforms — a completely different outcome depending on what's running behind the scenes.</p>
+<p class="sub">Same leads, same platforms &mdash; a completely different outcome depending on what's running behind the scenes.</p>
 <div class="compare">
 <div class="comp-col bad reveal">
 <h3><svg class="icon"><use href="#i-x-circle"></use></svg> Manual &amp; Scattered</h3>
 <div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Replies whenever someone gets to their phone</div>
 <div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Leads tracked in someone's memory or a notebook</div>
-<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Pages post when there's time — which is rarely</div>
+<div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Pages post when there's time &mdash; which is rarely</div>
 <div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Comments and DMs pile up, unanswered</div>
 <div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> No idea what's actually driving sales</div>
 <div class="comp-row"><svg class="icon"><use href="#i-x-circle"></use></svg> Hiring a full team costs Rs 150,000+/month</div>
@@ -173,26 +196,26 @@
 </div>
 </section>
 <!-- ============ SERVICES ============ -->
-<section id="services" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="services" class="section-soft">
     <div class="hero-video">
     
 </div>
 <div class="wrap center">
 <span class="eyebrow">What We Do</span>
 <h2 class="reveal">One Partner. Three Growth Engines.</h2>
-<p class="sub">Everything a modern business needs to capture, convert, and stay visible — built and managed by one team.</p>
+<p class="sub">Everything a modern business needs to capture, convert, and stay visible &mdash; built and managed by one team.</p>
 <div class="svc-grid reveal-stagger" style="text-align:left">
 <div class="svc r-item">
 <span class="pill">CORE</span>
 <span class="num">01</span>
 <div class="ico"><svg class="icon"><use href="#i-cpu"></use></svg></div>
 <h3>AI Sales Automation</h3>
-<p>End-to-end automation on the official WhatsApp Business API. AI captures, qualifies, and follows up on every lead — in under 2 seconds, around the clock.</p>
+<p>End-to-end automation on the official WhatsApp Business API. AI captures, qualifies, and follows up on every lead &mdash; in under 2 seconds, around the clock.</p>
 <ul>
-<li>Official WhatsApp Business API — zero ban risk</li>
+<li>Official WhatsApp Business API &mdash; zero ban risk</li>
 <li>AI chatbots (ChatGPT, Gemini &amp; Claude built-in)</li>
 <li>No-code flow builder &amp; keyword triggers</li>
-<li>Voice note transcription — Urdu, English, Roman Urdu</li>
+<li>Voice note transcription &mdash; Urdu, English, Roman Urdu</li>
 <li>Broadcast campaigns to unlimited contacts</li>
 </ul>
 </div>
@@ -203,7 +226,7 @@
 <h3>CRM &amp; Sales Pipeline</h3>
 <p>Every inquiry auto-logged, scored, and tracked from first message to closed deal. Your whole team in one command center.</p>
 <ul>
-<li>Drag &amp; drop pipeline — Hot / Warm / Cold / Closed</li>
+<li>Drag &amp; drop pipeline &mdash; Hot / Warm / Cold / Closed</li>
 <li>Lead scoring &amp; automated follow-up sequences</li>
 <li>Multi-agent inbox with SLA tracking</li>
 <li>Google Sheets &amp; Calendar sync</li>
@@ -211,14 +234,14 @@
 </ul>
 </div>
 <div class="svc r-item">
-<span class="pill new">NEW ✦</span>
+<span class="pill new">NEW </span>
 <span class="num">03</span>
 <div class="ico"><svg class="icon"><use href="#i-smartphone"></use></svg></div>
 <h3>AI Social Media Management</h3>
-<p>We run your Instagram, Facebook, TikTok &amp; LinkedIn pages for you — AI-powered content, scheduling, engagement, and growth. You approve, we execute.</p>
+<p>We run your Instagram, Facebook, TikTok &amp; LinkedIn pages for you &mdash; AI-powered content, scheduling, engagement, and growth. You approve, we execute.</p>
 <ul>
 <li>AI-generated posts, Reels scripts &amp; captions</li>
-<li>Monthly content calendar — done for you</li>
+<li>Monthly content calendar &mdash; done for you</li>
 <li>Comment &amp; DM management by AI + human team</li>
 <li>Branded designs matched to your identity</li>
 <li>Monthly growth &amp; performance reports</li>
@@ -270,17 +293,17 @@
 <div>
 <span class="eyebrow">AI Social Media Management</span>
 <h2 class="reveal">Your Pages, Handled.<br/>Every Single Day.</h2>
-<p class="sub">Stop worrying about what to post. Our AI content engine plus a dedicated human team keeps your brand active, consistent, and growing — while every inquiry it generates flows straight into your automation system.</p>
+<p class="sub">Stop worrying about what to post. Our AI content engine plus a dedicated human team keeps your brand active, consistent, and growing &mdash; while every inquiry it generates flows straight into your automation system.</p>
 <div class="feat-list reveal-stagger">
-<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-edit"></use></svg></div><div><h4>AI Content Engine</h4><p>Posts, carousels, Reels scripts, and captions generated in your brand voice — in Urdu, English, or both. You approve everything before it goes live.</p></div></div>
-<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-calendar"></use></svg></div><div><h4>Done-For-You Content Calendar</h4><p>A full month of content planned, designed, and scheduled in advance. Festivals, campaigns, and product launches — all mapped out.</p></div></div>
-<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-message"></use></svg></div><div><h4>Engagement That Converts</h4><p>Every comment gets a reply, every DM gets answered — and buying-intent messages are auto-routed into your CRM as leads. Your page becomes a sales channel.</p></div></div>
-<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-bar-chart"></use></svg></div><div><h4>Monthly Growth Reports</h4><p>Followers, reach, engagement, leads generated, best-performing content — delivered in a clear report you can actually read.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-edit"></use></svg></div><div><h4>AI Content Engine</h4><p>Posts, carousels, Reels scripts, and captions generated in your brand voice &mdash; in Urdu, English, or both. You approve everything before it goes live.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-calendar"></use></svg></div><div><h4>Done-For-You Content Calendar</h4><p>A full month of content planned, designed, and scheduled in advance. Festivals, campaigns, and product launches &mdash; all mapped out.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-message"></use></svg></div><div><h4>Engagement That Converts</h4><p>Every comment gets a reply, every DM gets answered &mdash; and buying-intent messages are auto-routed into your CRM as leads. Your page becomes a sales channel.</p></div></div>
+<div class="feat r-item"><div class="ico"><svg class="icon"><use href="#i-bar-chart"></use></svg></div><div><h4>Monthly Growth Reports</h4><p>Followers, reach, engagement, leads generated, best-performing content &mdash; delivered in a clear report you can actually read.</p></div></div>
 </div>
 </div>
 <div class="cal reveal">
 <div class="cal-head">
-<b><svg class="icon"><use href="#i-calendar"></use></svg> Content Calendar — March</b>
+<b><svg class="icon"><use href="#i-calendar"></use></svg> Content Calendar &mdash; March</b>
 <span class="live">AUTO-PILOT</span>
 </div>
 <div class="cal-grid reveal-stagger">
@@ -292,38 +315,64 @@
 <div class="reveal-stagger">
 <div class="cal-item r-item">
 <div class="th" style="background:rgba(217,70,239,.15)"><svg class="icon"><use href="#i-film"></use></svg></div>
-<div><b>Reel: "5 Signs You Need Solar"</b><span>Instagram + Facebook · Mon 9:00 AM</span></div>
+<div><b>Reel: "5 Signs You Need Solar"</b><span>Instagram + Facebook &middot; Mon 9:00 AM</span></div>
 <span class="st st-sched">SCHEDULED</span>
 </div>
 <div class="cal-item r-item">
 <div class="th" style="background:rgba(59,130,246,.15)"><svg class="icon"><use href="#i-image"></use></svg></div>
-<div><b>Carousel: Client Success Story</b><span>Instagram + LinkedIn · Wed 6:00 PM</span></div>
-<span class="st st-live">PUBLISHED ✓</span>
+<div><b>Carousel: Client Success Story</b><span>Instagram + LinkedIn &middot; Wed 6:00 PM</span></div>
+<span class="st st-live">PUBLISHED &#10003;</span>
 </div>
 <div class="cal-item r-item">
 <div class="th" style="background:rgba(245,158,11,.15)"><svg class="icon"><use href="#i-edit"></use></svg></div>
-<div><b>Post: Ramadan Offer Announcement</b><span>All platforms · Awaiting your approval</span></div>
+<div><b>Post: Ramadan Offer Announcement</b><span>All platforms &middot; Awaiting your approval</span></div>
 <span class="st st-draft">DRAFT</span>
 </div>
 <div class="cal-item r-item">
 <div class="th" style="background:rgba(34,197,94,.15)"><svg class="icon"><use href="#i-bar-chart"></use></svg></div>
-<div><b>February Growth Report</b><span>+2,340 followers · 46 leads from social</span></div>
-<span class="st st-live">SENT ✓</span>
+<div><b>February Growth Report</b><span>+2,340 followers &middot; 46 leads from social</span></div>
+<span class="st st-live">SENT &#10003;</span>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- ============ HOW IT WORKS ============ -->
-<section id="how" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-<div class="wrap center">
+<section id="how" class="section-soft">
+<div class="wrap">
+<div class="how-grid">
+<div class="how-text">
 <span class="eyebrow">How It Works</span>
-<h2 class="reveal">Live in 3 Steps</h2>
-<p class="sub">No code. No complexity. We handle setup, content, and automation — you watch the leads come in.</p>
-<div class="steps reveal-stagger" style="text-align:left">
-<div class="step r-item"><span class="n">01</span><h3><svg class="icon"><use href="#i-search"></use></svg> Free Growth Audit</h3><p>We map your current inquiry-to-sale process and social presence, find exactly where leads and reach are being lost, and give you a custom blueprint — no commitment.</p></div>
-<div class="step r-item"><span class="n">02</span><h3><svg class="icon"><use href="#i-settings"></use></svg> We Build Your System</h3><p>Automation flows, AI chatbot, CRM setup, and your first month's content calendar — designed, built, and tested by our team. You approve everything.</p></div>
-<div class="step r-item"><span class="n">03</span><h3><svg class="icon"><use href="#i-rocket"></use></svg> Go Live &amp; Grow</h3><p>AI replies in under 2 seconds, your pages post consistently, every lead lands in your CRM — and you get a clear report every month.</p></div>
+<h2 class="reveal">Live in 3 <span class="text-accent">Steps</span></h2>
+<p class="sub reveal">No code. No complexity. We handle setup, content, and automation &mdash; you watch the leads come in.</p>
+<a class="btn btn-blue reveal" href="#contact">Book Free Growth Audit</a>
+</div>
+<div class="workflow reveal-stagger">
+<div class="wf-item r-item">
+<div class="wf-node"><span class="wf-dot"></span></div>
+<div class="wf-card svc">
+<span class="wf-num">1.</span>
+<h3><svg class="icon"><use href="#i-search"></use></svg> Free Growth Audit</h3>
+<p>We map your current inquiry-to-sale process and social presence, find exactly where leads and reach are being lost, and give you a custom blueprint &mdash; no commitment.</p>
+</div>
+</div>
+<div class="wf-item r-item">
+<div class="wf-node"><span class="wf-dot"></span></div>
+<div class="wf-card svc">
+<span class="wf-num">2.</span>
+<h3><svg class="icon"><use href="#i-settings"></use></svg> We Build Your System</h3>
+<p>Automation flows, AI chatbot, CRM setup, and your first month's content calendar &mdash; designed, built, and tested by our team. You approve everything.</p>
+</div>
+</div>
+<div class="wf-item r-item">
+<div class="wf-node"><span class="wf-dot"></span></div>
+<div class="wf-card svc">
+<span class="wf-num">3.</span>
+<h3><svg class="icon"><use href="#i-rocket"></use></svg> Go Live &amp; Grow</h3>
+<p>AI replies in under 2 seconds, your pages post consistently, every lead lands in your CRM &mdash; and you get a clear report every month.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -332,7 +381,7 @@
 <div class="wrap center">
 <span class="eyebrow">Platforms</span>
 <h2 class="reveal">Where Your Customers Already Are</h2>
-<p class="sub">One system across every channel — conversations and content, unified.</p>
+<p class="sub">One system across every channel &mdash; conversations and content, unified.</p>
 <div class="plat-row">
 <div class="plat"><i><svg class="icon"><use href="#i-whatsapp"></use></svg></i> WhatsApp</div>
 <div class="plat"><i><svg class="icon"><use href="#i-instagram"></use></svg></i> Instagram</div>
@@ -350,7 +399,7 @@
 </div>
 </section>
 <!-- ============ PRICING ============ -->
-<section id="pricing" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="pricing" class="section-soft">
 <div class="wrap center">
 <span class="eyebrow">Pricing</span>
 <h2 class="reveal">Simple Plans. Serious Results.</h2>
@@ -392,7 +441,7 @@
 <li>Google Sheets &amp; Calendar sync</li>
 <li>Priority support</li>
 </ul>
-<a class="btn btn-blue" href="#contact">Scale Now →</a>
+<a class="btn btn-blue" href="#contact">Scale Now &rarr;</a>
 </div>
 <div class="plan r-item">
 <h3>Business Elite</h3>
@@ -417,10 +466,10 @@
 <div class="plan r-item">
 <h3>Presence</h3>
 <div class="amt">Rs 24,999<small> / month</small></div>
-<div class="for">Stay consistent and visible — for small businesses building a brand.</div>
+<div class="for">Stay consistent and visible &mdash; for small businesses building a brand.</div>
 <ul>
 <li>2 platforms (IG + FB)</li>
-<li>12 posts / month — AI + designer</li>
+<li>12 posts / month &mdash; AI + designer</li>
 <li>Captions in Urdu &amp; English</li>
 <li>Content calendar &amp; scheduling</li>
 <li>Comment &amp; DM replies (business hours)</li>
@@ -442,7 +491,7 @@
 <li>Hashtag &amp; trend strategy</li>
 <li>Monthly growth report + strategy call</li>
 </ul>
-<a class="btn btn-blue" href="#contact">Grow My Pages →</a>
+<a class="btn btn-blue" href="#contact">Grow My Pages &rarr;</a>
 </div>
 <div class="plan r-item">
 <h3>Full Takeover</h3>
@@ -476,7 +525,7 @@
 <a class="btn btn-ghost" href="#contact">Get Bundle</a>
 </div>
 <div class="plan hot r-item">
-<span class="flag"><svg class="icon"><use href="#i-zap"></use></svg> BEST VALUE — SAVE Rs 6,000/mo</span>
+<span class="flag"><svg class="icon"><use href="#i-zap"></use></svg> BEST VALUE &mdash; SAVE Rs 6,000/mo</span>
 <h3>Dominate</h3>
 <div class="amt">Rs 47,999<small> / month</small></div>
 <div class="for">Growth automation + Growth Engine social. The complete system.</div>
@@ -487,7 +536,7 @@
 <li>Unified monthly growth report</li>
 <li>Quarterly strategy review</li>
 </ul>
-<a class="btn btn-blue" href="#contact">Dominate My Market →</a>
+<a class="btn btn-blue" href="#contact">Dominate My Market &rarr;</a>
 </div>
 <div class="plan r-item">
 <h3>Enterprise</h3>
@@ -504,8 +553,8 @@
 </div>
 </div>
 <div class="price-note">
-<div><svg class="icon"><use href="#i-settings"></use></svg> <b>One-time implementation</b> — automation flow design, testing, CRM setup &amp; AI prompt engineering. <b>Starts from Rs 34,999.</b> AI API usage (OpenAI / Gemini) billed separately by the provider.</div>
-<a class="btn btn-ghost" href="#contact" style="padding:10px 22px;font-size:13px">Get a quote →</a>
+<div><svg class="icon"><use href="#i-settings"></use></svg> <b>One-time implementation</b> &mdash; automation flow design, testing, CRM setup &amp; AI prompt engineering. <b>Starts from Rs 34,999.</b> AI API usage (OpenAI / Gemini) billed separately by the provider.</div>
+<a class="btn btn-ghost" href="#contact" style="padding:10px 22px;font-size:13px">Get a quote &rarr;</a>
 </div>
 </div>
 </section>
@@ -514,20 +563,20 @@
 <div class="wrap center">
 <span class="eyebrow">What Clients Say</span>
 <h2 class="reveal">Real Reviews. Real Results.</h2>
-<p class="sub">★★★★★ 5.0 average across Google &amp; Facebook reviews.</p>
+<p class="sub">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 average across Google &amp; Facebook reviews.</p>
 <div class="quotes reveal-stagger" style="text-align:left">
 <div class="quote r-item">
-<div class="stars">★★★★★</div>
-<p>"They thoroughly understood our complex business model. Their development and tech team proved highly skilled and professional — we are in safe hands and very satisfied with the services provided."</p>
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p>"They thoroughly understood our complex business model. Their development and tech team proved highly skilled and professional &mdash; we are in safe hands and very satisfied with the services provided."</p>
 <div class="who"><div class="avat" style="background:rgba(59,130,246,.18);color:#60a5fa">E</div><div><b>Immigration Consultancy</b><span>Verified Google Review</span></div></div>
 </div>
 <div class="quote r-item">
-<div class="stars">★★★★★</div>
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 <p>"The system works smoothly, replies instantly, and saves me hours managing customer messages. Highly recommended for anyone who wants to automate their WhatsApp and grow efficiently."</p>
 <div class="who"><div class="avat" style="background:rgba(34,197,94,.18);color:#4ade80">M</div><div><b>E-Commerce Owner</b><span>Facebook Review</span></div></div>
 </div>
 <div class="quote r-item">
-<div class="stars">★★★★★</div>
+<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
 <p>"Before, our pages posted randomly and leads went nowhere. Now content goes out on schedule, every DM gets answered, and inquiries land in our CRM automatically."</p>
 <div class="who"><div class="avat" style="background:rgba(217,70,239,.18);color:#e879f9">S</div><div><b>Retail Brand</b><span>Client Testimonial</span></div></div>
 </div>
@@ -535,22 +584,22 @@
 </div>
 </section>
 <!-- ============ FAQ ============ -->
-<section id="faq" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<section id="faq" class="section-soft">
 <div class="wrap center">
 <span class="eyebrow">FAQ</span>
 <h2 class="reveal">Questions, Answered</h2>
 <div class="faq" style="text-align:left">
 <details open="">
 <summary>Is this just a chatbot?</summary>
-<p>No. A chatbot only replies to messages. OmniConvo is a complete growth system — it captures leads from WhatsApp, Instagram, Facebook and WebChat, qualifies them with AI, logs them into a CRM with pipeline tracking, runs automated follow-ups, AND manages your social media content and engagement. The whole inquiry-to-sale process runs without manual work.</p>
+<p>No. A chatbot only replies to messages. OmniConvo is a complete growth system &mdash; it captures leads from WhatsApp, Instagram, Facebook and WebChat, qualifies them with AI, logs them into a CRM with pipeline tracking, runs automated follow-ups, AND manages your social media content and engagement. The whole inquiry-to-sale process runs without manual work.</p>
 </details>
 <details>
 <summary>How does AI social media management actually work?</summary>
-<p>Our AI content engine drafts posts, Reels scripts, and captions in your brand voice. Our human team refines designs and strategy. You approve everything through a simple approval flow before it goes live. AI + human team then handles comments and DMs — routing buying-intent messages straight into your CRM as leads.</p>
+<p>Our AI content engine drafts posts, Reels scripts, and captions in your brand voice. Our human team refines designs and strategy. You approve everything through a simple approval flow before it goes live. AI + human team then handles comments and DMs &mdash; routing buying-intent messages straight into your CRM as leads.</p>
 </details>
 <details>
 <summary>Will automation get my WhatsApp number banned?</summary>
-<p>No — that's the point of using the official WhatsApp Business API. Unofficial bulk-messaging tools frequently get numbers banned. We set you up on the Meta-approved API, so your messaging stays compliant and stable.</p>
+<p>No &mdash; that's the point of using the official WhatsApp Business API. Unofficial bulk-messaging tools frequently get numbers banned. We set you up on the Meta-approved API, so your messaging stays compliant and stable.</p>
 </details>
 <details>
 <summary>Do I lose control of my pages?</summary>
@@ -562,7 +611,7 @@
 </details>
 <details>
 <summary>How long does it take to go live?</summary>
-<p>Basic automation can go live within hours. A full setup with custom flows and your first content calendar typically takes 5–10 days, depending on complexity.</p>
+<p>Basic automation can go live within hours. A full setup with custom flows and your first content calendar typically takes 5-10 days, depending on complexity.</p>
 </details>
 <details>
 <summary>What does it cost?</summary>
@@ -577,12 +626,12 @@
 <div class="cta-box reveal">
 <span class="eyebrow">Get In Touch</span>
 <h2 class="reveal">Stop Losing Leads.<br/>Start Growing Everywhere.</h2>
-<p class="sub" style="margin-bottom:34px">Book a free 15-minute growth audit. We'll map your current process, find where leads and reach are being lost, and show you exactly how to fix it — no commitment, no pitch.</p>
+<p class="sub" style="margin-bottom:34px">Book a free 15-minute growth audit. We'll map your current process, find where leads and reach are being lost, and show you exactly how to fix it &mdash; no commitment, no pitch.</p>
 <div class="cta-btns">
 <a class="btn btn-blue" href="https://wa.me/920000000000?text=Hi+Team%2C+I+want+a+Free+Growth+Audit"><svg class="icon"><use href="#i-whatsapp"></use></svg>Book Free Audit</a>
 <a class="btn btn-ghost" href="mailto:hello@omniconvo.com"><svg class="icon"><use href="#i-mail"></use></svg> hello@omniconvo.com</a>
 </div>
-<p style="position:relative;margin-top:22px;font-size:13px;color:var(--txt-3)"><svg class="icon"><use href="#i-map-pin"></use></svg> Karachi, Pakistan · Serving businesses worldwide · Typically replies within 30 minutes</p>
+<p style="position:relative;margin-top:22px;font-size:13px;color:var(--txt-3)"><svg class="icon"><use href="#i-map-pin"></use></svg> Karachi, Pakistan &middot; Serving businesses worldwide &middot; Typically replies within 30 minutes</p>
 </div>
 </div>
 </section>
@@ -599,7 +648,7 @@
 <h4>Platform</h4>
 <a href="#services">AI Automation</a>
 <a href="#services">CRM &amp; Pipeline</a>
-<a href="#social">Social Media AI</a>
+
 <a href="#pricing">Pricing</a>
 </div>
 <div>
@@ -618,7 +667,7 @@
 </div>
 </div>
 <div class="foot-bottom">
-<span>© 2026 OmniConvo · An Outsource Mantra Company · Karachi, Pakistan</span>
+<span>&copy; 2026 OmniConvo &middot; An Outsource Mantra Company &middot; Karachi, Pakistan</span>
 <span>Automating Business. Designing the Future.</span>
 </div>
 </div>
@@ -627,3 +676,26 @@
 
 <script src="script.js"></script></body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
